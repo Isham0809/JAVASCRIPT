@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            // ----- Do While Loop -----
+            // One to Five
+            let count = 1
+
+            do{
+              console.log(count)
+              count++
+            }while(count<=5)
+
+
+            // Repeat until certaing condition is met
+            let input
+            do{
+              input = prompt("Enter a number smaller than 10")
+              console.log(input)
+            }while(input <=10)
+            console.log("you have entered a number greater than 10"+input)
+
+
+            // Sum of values 
+            let sum = 0
+            let num
+
+            do {
+            num  = parseInt(prompt("enter a number (0 to stop)"))
+            console.log(num)
+
+              sum +=num
+            }while(num!=0)
+
+            console.log(sum)
+
+
+            // Display Even Number
+            let num1 = 0
+
+            do{
+            if(num1%2===0)
+            {
+              console.log(num1)
+            }
+              num1++
+            }while(num1<=10)
+
+
+            // Flipping a coin until heads comes
+            let coin 
+            let countFlip = 0
+
+            do{
+                countFlip++
+                coin = Math.random()<0.5 ? 'tails': 'heads'
+                console.log('Flipping coin it lands on : '+ coin)
+            }while(coin !== 'heads')
+
+            console.log("It took "+ countFlip + "flips to get heads")
+
+
+            // ----- While loop -----
+            // One to Five
+            let count1 = 1
+            while(count1<=5)
+            {
+                console.log(count1)
+                count1++
+            }
+
+
+            // Repeat until certaing condition is met
+            let input1 = 0
+
+            while(input1 <= 10)
+            {
+              input1 = prompt("Enter a number smaller than 10")
+              console.log(input1)
+            }
+            console.log("You have entered a number greater than 10"+ input1)
+
+
+            // Sum of values 
+            let sum1 = 0
+            let num2
+
+            num2++
+            while(num2!=0)
+            {
+                num2  = parseInt(prompt("enter a number (0 to stop)"))
+                console.log(num2)
+                sum1 +=num2
+            }
+
+            console.log(sum1)
+
+
+            // Display Even Numbers
+            let num3 = 0
+
+            while(num3<=10){
+                if(num3%2===0)
+                {
+                    console.log(num3)
+                }
+                num3++
+            }
+
+            // Flipping a coin until heads comes
+            let coin1 
+            let countFlip1 = 0
+
+            while(coin1 !== 'heads'){
+                countFlip1++
+                coin1 = Math.random()<0.5 ? 'tails': 'heads'
+                console.log('Flipping coin it lands on : '+ coin1)
+            }
+
+            console.log("It took "+ countFlip1 + "flips to get heads")
+
+
+            // ----- For Loop -----
+            // One to Five
+            for(let count2 = 1;count2<=5;count2++)
+            {
+                console.log(count2)
+            }
+
+
+            // Repeat until certaing condition is met
+            for(var input2 = 0;input2 <= 10;)
+            {
+              input2 = prompt("Enter a number smaller than 10")
+              console.log(input2)
+            }
+            console.log("You have entered a number greater than 10"+ input2)
+
+
+            // Sum of values 
+            let sum2 = 0
+  
+            for(let num4 ;num4!=0;)
+            {
+                num4  = parseInt(prompt("enter a number (0 to stop)"))
+                console.log(num4)
+                sum2 += num4
+            }
+
+            console.log(sum2)
+
+            // Display Even Numbers
+            for(let num5 = 0;num5<=10;num5++){
+              if(num5%2===0)
+              {
+                console.log(num5)
+              }
+            }
+
+            // Flipping a coin until heads comes
+            let coin2 
+            let countFlip2 = 0
+
+            for( ; coin2 != 'heads'; coin2  = Math.random()<0.5 ? 'tails': 'heads')
+            {
+              countFlip2++
+              console.log('Flipping coin it lands on : '+ coin2)
+            }
+
+            console.log("It took "+ countFlip2 + "flips to get heads")
+
+
+    </script>
+</body>
+</html>
