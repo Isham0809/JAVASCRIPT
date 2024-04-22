@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background:url('./19.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(20px);
+    /* background-position: center; */
+}
+.food_menu{
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.253);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 80px 90px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+h1 {
+    font-family: 'Lobster', cursive; 
+    font-size: 3rem; 
+    color: #333; 
+    text-align: center; 
+    margin-bottom: 1rem;
+}
+
+h3,.total{
+    font-family: 'Lobster', cursive; 
+    color: #333; 
+    text-align: center; 
+}
+
+.about-img {
+    width: 100%;
+    height: 500px;
+    background-image: url('../images/about.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.about-img-2 {
+    background-image: url('../images/signature.png');
+    width: 25%;
+    height: 120px;
+    position: absolute;
+    bottom: 60px;
+    right: 104px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.signature {
+    animation: rotation 12s infinite linear;
+}
+
+.about .owl-carousel {
+    margin: 15px 0;
+}
+
+.about .owl-carousel img {
+    transition: all .5s;
+}
+
+.about .owl-carousel img:hover {
+    border: 1px solid #DD6E8B !important;
+}
+
+.banner {
+    background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+}
+
+.t-card:hover .t-img::before {
+    height: 100%;
+    visibility: visible;
+}
+
+.t-card .t-box,
+.t-card .t-content,
+.t-card .t-img:before {
+    transition: all ease 0.4s;
+}
+
+.t-card .t-img:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #000;
+    opacity: 0.5;
+    visibility: hidden;
+}
+
+.t-card .t-box {
+    left: 40px !important;
+    right: 40px !important;
+    transition: all ease 0.4s;
+}
+
+.t-card:hover .t-box {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    margin-bottom: 80px !important;
+}
+
+.t-box h3 {
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.t-card .t-content {
+    transform: translateY(-50%);
+    transition: all ease 0.4s;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.t-card:hover .t-content {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition-delay: 0.2s !important;
+    margin-top: 1px !important;
+}
+
+.contact h6{
+    letter-spacing: 5px;
+}
+
+#cart {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 10px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.253);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 50px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#cart ul{
+    font-family: "Jost", sans-serif;
+}
