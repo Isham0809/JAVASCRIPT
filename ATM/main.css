@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(177, 216, 255, 0.337);
+    backdrop-filter: blur(6px);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7), 
+                -10px -10px 20px rgba(255, 255, 255, 0.1) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 1000;
+}
+
+/* Navbar link styles */
+.navbar a {
+    color: #fff; /* Text color */
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+/* Navbar hover effect */
+.navbar a:hover {
+    color: #f0f0f0;
+}
+
+#balance,#deposit,#withdraw{
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.905);
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.circles2 {
+    position: absolute;
+    height: 270px;
+    width: 450px;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.card-group {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    font-size: 24px;
+    font-family: "Josefin Sans", sans-serif;
+    transform: translate(-50%, -50%);
+}
