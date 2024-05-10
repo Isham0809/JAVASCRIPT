@@ -1,0 +1,22 @@
+body{
+    background-image: url('/calculator/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.form {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    transform-style: preserve-3d; 
+    transition: transform 0.5s;
+}
+
+.form:hover {
+    transform: rotateY(5deg) rotateX(5deg)  translateZ(90px); /* Apply rotation on hover */
+}
+
+.form-container {
+    perspective: 1000px; 
+}
