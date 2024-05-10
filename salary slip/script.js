@@ -23,7 +23,7 @@ function salarySlip(){
 
       gs = basicSalary + hra + da + sa
       td = hi + pt + pf
-      np = basicSalary - td
+      np = gs - td
 
       document.getElementById("basicSalary").innerText = `${basicSalary}`;
       document.getElementById("hra").innerText = `${hra}`;
