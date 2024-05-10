@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="calculator-container">
+      <div class="calculator">
+
+        <!-- input field -->
+        <h1 class="text-white fs-1 text-center mb-4">CALCULATOR</h1>
+        <input type="text" class="form-control bg-transparent mb-3 py-5 txt text-white" id="display" disabled>
+
+        <!-- row 1 -->
+        <div class="row">
+          <div class="col-md-3">
+            <button class="btn my-3 py-3 fw-semibold px-5 c" onclick="clearDisplay()">C</button>   
+          </div>
+          
+          <div class="col-md-3">
+            <button class="btn my-3 py-3 fw-semibold px-5 d" onclick="deleteToDisplay()">D</button>
+          </div>
+            
+          <div class="col-md-3">
+            <button class="btn my-3 py-3 fw-semibold px-5 ast" onclick="appendToDisplay('*')">*</button>
+          </div>
+
+          <div class="col-md-3">
+            <button class="btn my-3 py-3 fw-semibold px-5 mod" onclick="appendToDisplay('%')">%</button>
+          </div>
+        </div>
+
+        <!-- row 2 -->
+        <div class="row">
+          <div class="col-md-3">
+            <button class="btn my-3 py-3 fw-semibold px-5" onclick="appendToDisplay('7')">7</button>
+          </div>
+
+          <div class="col-md-3">
+            <button class="btn my-3 py-3 fw-semibold px-5" onclick="appendToDisplay('8')">8</button>
+          </div>
+
+          <div class="col-md-3">
+            <button class="btn my-3 py-3 fw-semibold px-5" onclick="appendToDisplay('9')">9</button>
+          </div>
+
+          <div class="col-md-3">
+            <button class="btn my-3 py-3 fw-semibold px-5 plu" onclick="appendToDisplay('+')">+</button>
+          </div>
+        </div>
+
+        <!-- row 3 -->
+        <div class="row">
+          <div class="col-md-3">
+            <button class="btn my-3 py-3 fw-semibold px-5" onclick="appendToDisplay('4')">4</button>
+          </div>
+          <div class="col-md-3">
+            <button class="btn my-3 py-3 fw-semibold px-5" onclick="appendToDisplay('5')">5</button>
+          </div>
+          <div class="col-md-3">
+            <button class="btn my-3 py-3 fw-semibold px-5" onclick="appendToDisplay('6')">6</button>
+          </div>
+          <div class="col-md-3">
+            <button class="btn my-3 py-3 fw-semibold px-5 min" onclick="appendToDisplay('-')">-</button>
+          </div>
+        </div>
+
+        <!-- row 4 -->
+        <div class="row">
+          <div class="col-md-3">
+            <button class="btn my-3 py-3 fw-semibold px-5" onclick="appendToDisplay('1')">1</button>
+          </div>
+          <div class="col-md-3">
+            <button class="btn my-3 py-3 fw-semibold px-5" onclick="appendToDisplay('2')">2</button>
+          </div>
+          <div class="col-md-3">
+            <button class="btn my-3 py-3 fw-semibold px-5" onclick="appendToDisplay('3')">3</button>
+          </div>
+          <div class="col-md-3">
+            <button class="btn my-3 py-3 fw-semibold px-5 div" onclick="appendToDisplay('/')">/</button>
+          </div>
+        </div>
+
+        <!-- row 5 -->
+        <div class="row">
+          <div class="col-md-3">
+            <button class="btn my-3 py-3 fw-semibold px-5" onclick="appendToDisplay('00')">00</button>
+          </div>
+          <div class="col-md-3">
+            <button class="btn my-3 py-3 fw-semibold px-5" onclick="appendToDisplay('0')">0</button>
+          </div>
+          <div class="col-md-3">
+            <button class="btn my-3 py-3 fw-semibold px-5" onclick="appendToDisplay('.')">.</button>
+          </div>
+          <div class="col-md-3">
+            <button class="btn my-3 py-3 fw-semibold px-5 equ" onclick="calculate()">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <!-- JS -->
+  <script src="calc.js"></script>
+
+</body>
+</html>
